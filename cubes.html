@@ -4,12 +4,57 @@
         <title>Document</title>
 
         <style>
+            #block_container {
+                display: flex;
+                flex-wrap: wrap-reverse;
+                /* flex-direction: column; */
+                background-color: rgb(255, 137, 137);
+                /* padding: 20px; */
+                border: 5px solid rgb(24, 24, 24) ;
+                justify-content: center;
+            }
+            .block {
+                display:flex;
+                width:100px;
+                height:100px;
+                font-size: 50px;
+                background-color:teal;
+                /* margin: 5px; */
+                border: 5px solid rebeccapurple ;
+                justify-content: center;
+                
+            }
 
+            .nech_block  {
+            transform: rotate(0.5turn);
+            }
+
+            .ch_block {
+                background-color:rgb(253, 6, 6);
+            }
+            .ch_block:hover {background-color:teal}
+            .nech_block:hover {background-color:red}
         </style>
+
     </head>
 
     <body>
         
+<div id="block_container">
+
+    <div id="b1"  class="block nech_block">1</div>
+    <div id="b2"  class="block ch_block ">2</div>
+    <div id="b3"  class="block nech_block">3</div>
+    <div id="b4"  class="block ch_block ">4</div>
+    <div id="b5"  class="block nech_block">5</div>
+    <div id="b6"  class="block ch_block ">6</div>
+    <div id="b7"  class="block nech_block">7</div>
+    <div id="b8"  class="block ch_block ">8</div>
+    <div id="b9"  class="block nech_block">9</div>
+    <div id="b10"  class="block ch_block ">10</div>
+
+</div>
+
     </body>
-    
+
 </html>
